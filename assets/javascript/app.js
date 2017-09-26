@@ -1,3 +1,11 @@
+
+$("#user-clear").on("click", function() {
+     event.preventDefault();
+     $("#user-input-name").val(null);
+
+});
+
+
 function createYouTubeEmbedLink (link) {
     link = document.getElementById('link').value;
     if (link.charAt(12) == 'y') {    //if the 13th character = y (youtube  videos)
@@ -274,8 +282,8 @@ $("#user-search-plot").on("click", function() {
 //     }
 // });
 
-// $("#user-clear").on("click", function() {
-//     event.preventDefault();
-//     $("#user-input-name").val(null);
+$("#user-clear").on("click", function() {
+     event.preventDefault();
+     $("#user-input-name").val(null);
 
-// });
+});
